@@ -1,0 +1,207 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  height: auto;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: black;
+  color: #fff;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  padding: 7px 30px;
+  justify-content: space-between;
+}
+.navbar a {
+  font-size: 3vmax;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar h5 {
+  font-size: 1.5vmax;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hero-heading {
+  width: 100%;
+  padding: 7px 30px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.hero-heading h1 {
+  font-size: 3vmax;
+  font-weight: 200;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.hero-heading .heading-block {
+  width: fit-content;
+  text-align: right;
+  flex-direction: column;
+}
+.hero-heading .heading-block p {
+  margin-top: 5px;
+  text-align: right;
+  font-size: 2.5vmax;
+  text-transform: capitalize;
+}
+.hero-heading .heading-block h1 {
+  color: #ffffffee;
+  font-weight: 500;
+  font-size: 5vmax;
+  word-wrap: break-word;
+}
+.hero-skill-info {
+  padding: 7px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  margin-top: 30px;
+}
+.hero-skill-info p {
+  font-size: 1.4vmax;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+}
+.hero-skill-info p:hover {
+  transform: translateX(3px);
+}
+.hero-footer {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  padding: 0px 30px;
+  text-transform: capitalize;
+  gap: 20px;
+}
+.hero-footer p {
+  font-size: 1.4vmax;
+  transition: 0.1s ease-in all;
+  cursor: pointer;
+}
+.hero-footer p:hover {
+  transform: translateY(-2px);
+}
+
+/* section 1 is started here */
+.section1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7px 30px;
+}
+.section1 .center {
+  width: 100%;
+}
+.section1 .section-list-container {
+  display: flex;
+  border-top: 1px solid #3c3c3c;
+  padding: 15px 0px;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.section1 .section-list-container h1 {
+  font-size: 3vmax;
+}
+.section1 .section-list-container p {
+  font-size: 2vmax;
+}
+.section1 .section-list-container:last-child {
+  border-bottom: 1px solid #3c3c3c;
+}
+
+/* section 3 is started */
+.section3 {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.section3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vmax;
+  max-height: 400px;
+  object-fit: cover;
+  width: 40vmax;
+  max-width: 350px;
+  z-index: 10;
+}
+
+.section3 .heading {
+  display: inline-block;
+  font-weight: 700;
+  word-wrap: nowrap !important;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.section3 .heading h1 {
+  font-size: 7vmax;
+  margin: -5px 0px;
+  animation: scroll 5s ease-in 1s alternate infinite;
+}
+.section3 .heading h1:nth-child(2) {
+  -webkit-text-stroke: 1px white;
+  z-index: 11 !important;
+  animation-direction: alternate-reverse;
+  color: transparent;
+}
+.section3 .top-heading{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+   justify-content: space-between;
+    margin-top: 40px;    
+}
+.top-heading>h1{
+    font-weight: 400;
+    font-size: 2vmax;
+    text-transform: capitalize;
+    top: 10%;
+    z-index: 100;
+    left: 10%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
